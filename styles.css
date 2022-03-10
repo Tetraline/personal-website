@@ -9,7 +9,6 @@ body {
 
 #content {
   width: 400px;
-  height: 600px;
   border: black;
   border-style: solid;
   padding: 20px;
@@ -17,6 +16,7 @@ body {
   border-color: grey;
   margin: auto;
   position: relative;
+  padding-bottom: 100px;
 }
 
 h1 {
@@ -28,7 +28,7 @@ h1 {
   flex-direction: column;
 }
 
-a {
+.links > a {
   color: black;
   text-decoration: none;
   margin: 5px;
@@ -39,7 +39,7 @@ a {
   transition: 0.1s;
 }
 
-a:hover {
+.links > a:hover {
   background-color: grey;
 }
 
@@ -52,17 +52,16 @@ p:first-child {
   color: white;
 }
 
-.dark-mode a {
+.dark-mode .links > a {
   background-color: #26252a;
   color: white;
 }
 
-.dark-mode a:hover {
+.dark-mode .links > a:hover {
   background-color: rgb(10, 10, 10);
 }
 
 #switch {
-  margin-left: auto;
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -77,4 +76,11 @@ p:first-child {
 
 .dark-mode img {
   filter: invert(1);
+}
+
+#gitHubLink {
+  width: 40px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
