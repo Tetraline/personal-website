@@ -16,7 +16,7 @@
       </p>
 
       <h1>Projects</h1>
-      <p>These were developed while following the Odin Project course?</p>
+      <p>I built these projects as part of a course I am following</p>
       <div class="links">
         <a href="https://tetraline.github.io/etch-a-sketch/"
           >✍️ Etch-a-Sketch</a
@@ -29,10 +29,7 @@
         <a href="https://tetraline.github.io/calculator/">🧮 Calculator</a>
       </div>
       <h1>Writing</h1>
-      <p>
-        The writing published here is some of my thoughts on designing for the
-        web and the skills important for software engineering.
-      </p>
+      <p>These are some short essays on things that interest me.</p>
       <div class="links">
         <a
           href="https://tetraline.notion.site/On-Design-6ded6839ef214f16be63899c6fad0c19"
@@ -43,6 +40,15 @@
           >⏰ Time Management</a
         >
       </div>
+      <div id="switch">
+        <img id="switch-label" width="100px" src="label.png" alt="" />
+        <button onclick="toggleDark()" id="lightSwitch">💡</button>
+      </div>
     </div>
   </body>
+  <script>
+    function toggleDark() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </html>

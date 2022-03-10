@@ -4,6 +4,7 @@ body {
   justify-content: center;
   height: 95vh;
   font-family: "Roboto", sans-serif;
+  transition: 1.2s;
 }
 
 #content {
@@ -14,6 +15,8 @@ body {
   padding: 20px;
   padding-top: 0;
   border-color: grey;
+  margin: auto;
+  position: relative;
 }
 
 h1 {
@@ -33,4 +36,45 @@ a {
   width: 200px;
   border-radius: 50px;
   padding: 5px;
+  transition: 0.1s;
+}
+
+a:hover {
+  background-color: grey;
+}
+
+p:first-child {
+  text-decoration: underline;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode a {
+  background-color: #26252a;
+  color: white;
+}
+
+.dark-mode a:hover {
+  background-color: rgb(10, 10, 10);
+}
+
+#switch {
+  margin-left: auto;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#switch > button {
+  background-color: white;
+  border-radius: 50%;
+  font-size: large;
+  border: none;
+}
+
+.dark-mode img {
+  filter: invert(1);
 }
